@@ -26,7 +26,7 @@ do
 	a=$((i+1))
 	for((j=$a;j<4;j++))
 	do
-		if [ ${arrarith[i]} -lt ${arrarith[j]} ]
+		if [ ${arrarith[i]} -gt ${arrarith[j]} ]
 		then
 			greater=${arrarith[i]}
 			arrarith[i]=${arrarith[j]}
