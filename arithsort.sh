@@ -15,3 +15,9 @@ arith["arith3"]=$arith3
 arith["arith4"]=$arith4
 echo ${arith[@]}
 echo ${!arith[@]}
+for((i=0;i<4;i++))
+do
+	j=$((i+1))
+	arrarith[i]=${arith[arith$j]}
+done
+echo ${arrarith[@]}
